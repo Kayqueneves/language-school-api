@@ -89,6 +89,3 @@ http://localhost:5246/swagger
 * Avaliações pertencem a uma turma.
 * Notas pertencem a um aluno e a uma avaliação.
 
-## Autor
-
-Kayque Brito
