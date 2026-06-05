@@ -46,7 +46,9 @@ Data/
 * StudentGrade
 * Room
 * Schedule
+## Diagrama Entidade-Relacionamento (DER)
 
+![DER](Imagens/DER.png)
 
 ## Como Executar
 
