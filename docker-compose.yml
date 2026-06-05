@@ -1,0 +1,24 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+
+    hostname: mysql_school
+    container_name: mysql_school
+
+    restart: always
+
+    ports:
+      - "3306:3306"
+
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb-file-per-table=1
+
+    environment:
+      MYSQL_ROOT_PASSWORD: Q0bUEF7NlpK9T
+      MYSQL_USER: Llexantoppen
+      MYSQL_PASSWORD: Q0bUEF7NlpK9T
+      MYSQL_DATABASE: school_db
