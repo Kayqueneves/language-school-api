@@ -20,6 +20,7 @@ public class AppDbContext :   DbContext
     public DbSet<TeacherLanguages> teacher_languages { get; set; }
     public DbSet<Room> rooms { get; set; }
     public DbSet<Schedule> schedules { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -35,6 +36,7 @@ public class AppDbContext :   DbContext
         modelBuilder.Entity<TeacherLanguages>().ToTable("teacher_languages");
         modelBuilder.Entity<Room>().ToTable("rooms");
         modelBuilder.Entity<Schedule>().ToTable("schedules");
+        modelBuilder.Entity<User>().ToTable("users");
     }
 
 }
